@@ -11,17 +11,19 @@ It works just like GitHub's "Squash and merge" or GitLab's "Squash commits".
 With [Homebrew](https://brew.sh/) on MacOS and Linux:
 
 ```
-brew install sheerun/git-squash/git-squash
+brew install shenxianpeng/git-squash/git-squash
 ```
 
 With `curl` on MacOS and Linux, including Windows Subsystem for Linux:
 
 ```bash
 # If you are a root user
-curl https://raw.githubusercontent.com/sheerun/git-squash/master/git-squash > /usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash
+curl https://raw.githubusercontent.com/shenxianpeng/git-squash/master/git-squash > \
+/usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash
 
 # Or if you are a non-root but sudoer user
-sudo sh -c 'curl https://raw.githubusercontent.com/sheerun/git-squash/master/git-squash > /usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash'
+sudo sh -c 'curl https://raw.githubusercontent.com/shenxianpeng/git-squash/master/git-squash > \
+/usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash'
 ```
 
 ## Usage
@@ -31,7 +33,7 @@ sudo sh -c 'curl https://raw.githubusercontent.com/sheerun/git-squash/master/git
 # The easiest way to ensure it is to merge it and resolve any conflicts
 git merge master
 # Squash all changes on current branch that happened since master branch
-git squash master
+git-squash master
 ```
 
 ## License
